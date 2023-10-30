@@ -37,7 +37,7 @@ class ProgrammingAdapter : ListAdapter<ProgrammingItem, ProgrammingAdapter.Progr
         }
 
         override fun areContentsTheSame(oldItem: ProgrammingItem, newItem: ProgrammingItem): Boolean {
-           return oldItem.id == newItem.id
+           return oldItem == newItem
         }
 
     }
